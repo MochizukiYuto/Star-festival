@@ -17,7 +17,7 @@ export default function ForgotPassword({ status }) {
 
     return (
         <GuestLayout>
-            <Head title="Forgot Password" />
+            <Head title="パスワードの再設定" />
 
             <div className="mb-4 text-sm text-gray-600">
                 パスワードを忘れてしまいましたか？問題ありません。メールアドレスを教えていただければ、パスワードをリセットするリンクをお送りします。

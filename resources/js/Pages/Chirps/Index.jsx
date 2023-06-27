@@ -29,12 +29,16 @@ export default function Index({ auth, chirps }) {
                     <InputError message={errors.message} className="mt-2" />
                     <PrimaryButton className="mt-4" disabled={processing}>願いを載せる</PrimaryButton>
                 </form>
-                <div className="mt-6 bg-white shadow-sm rounded-lg divide-y">
+            </div>
+            <div className='grid grid-cols-3 gap-4'>
+                <div className="mt-6 mx-10 bg-white shadow-sm rounded-lg w-36" >
+
                     {chirps.map(chirp =>
                         <Chirp key={chirp.id} chirp={chirp} />
                     )}
                 </div>
             </div>
+
         </AuthenticatedLayout>
     );
 }

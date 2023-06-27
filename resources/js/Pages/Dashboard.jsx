@@ -5,24 +5,12 @@ export default function Dashboard({ auth }) {
     return (
         <AuthenticatedLayout
             user={auth.user}
-            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">ダッシュボード</h2>}
+        // header={<h2 className="font-semibold text-xl text-gray-800 leading-tight bg-indigo-300">ダッシュボード</h2>}
         >
-            <Head title="Dashboard" />
+            <Head title="ダッシュボード" />
 
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 text-gray-900">ログイン成功</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 text-gray-900">上の投稿をクリック。あなたの組織がより良いものになりますように。</div>
-                    </div>
-                </div>
+            <div className='h-screen w-screen flex justify-center items-center'>
+                あなたの組織がより良いものになるように短く簡潔に共有。上の投稿をクリック。
             </div>
         </AuthenticatedLayout>
     );
