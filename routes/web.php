@@ -43,7 +43,6 @@ Route::resource('chirps', ChirpController::class)
         'store' => 'chirps.store',
     ]);
 
-// Route::post('chirps', 'ChirpController@store')->name('chirps.store');
 
 
 require __DIR__.'/auth.php';

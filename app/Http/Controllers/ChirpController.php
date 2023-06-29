@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Chirp;
-use App\Http\Controllers\RedirectResponsive;
-// use Illuminate\Http\RedirectResponsive;
+// use App\Http\Controllers\RedirectResponsive;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;

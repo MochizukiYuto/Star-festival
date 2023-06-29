@@ -17,7 +17,7 @@ export default function Index({ auth, chirps }) {
 
     return (
         <AuthenticatedLayout user={auth.user}>
-            <Head title="Chirps" />
+            <Head title="投稿" />
             <div className="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8 ">
                 <form onSubmit={submit}>
                     <textarea
@@ -30,14 +30,17 @@ export default function Index({ auth, chirps }) {
                     <PrimaryButton className="mt-4" disabled={processing}>願いを載せる</PrimaryButton>
                 </form>
             </div>
-            <div className='grid grid-cols-3 gap-4'>
-                <div className="mt-6 mx-10 bg-white shadow-sm rounded-lg w-36" >
+            <div className='max-w-full'>
+                <div className='flex flex-wrap'>
+
 
                     {chirps.map(chirp =>
                         <Chirp key={chirp.id} chirp={chirp} />
                     )}
+
                 </div>
             </div>
+
 
         </AuthenticatedLayout>
     );
